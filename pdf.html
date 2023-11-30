@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js"></script>
+  <title>File Converter</title>
+</head>
+<body class="container mt-5">
+  <h1 class="mb-4">File Converter</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="textInput">Text to PDF Converter</label>
+      <textarea id="textInput" class="form-control" rows="6" placeholder="Enter text to convert"></textarea>
+      <button class="btn btn-primary mt-2" onclick="convertToPDF()">Convert to PDF</button>
+    </div>
+    <div class="col-md-6">
+      <label for="pdfInput">PDF to Text Converter</label>
+      <input type="file" id="pdfInput" class="form-control mb-2" accept=".pdf">
+      <button class="btn btn-success" onclick="convertToText()">Convert to Text</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
